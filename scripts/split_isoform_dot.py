@@ -98,7 +98,7 @@ def main():
                                 wm.write(">%s_%s%s" % (args.c, prot_map[key][num]["header"],
                                                        prot_map[key][num]["protein"]))
                             else:
-                                wi.write(">%siso_%s%s" % (args.c, prot_map[key][num]["header"],
+                                wi.write(">%s_iso_%s%s" % (args.c, prot_map[key][num]["header"],
                                                           prot_map[key][num]["protein"]))
                     else:
                         wm.write(">%s_%s%s" % (args.c, prot_map[key][list(prot_map[key].keys())[0]]["header"],
