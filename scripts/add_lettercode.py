@@ -95,7 +95,7 @@ def main():
                                     else:
                                         wm = open("%s/%smt.fa" % (args.o, args.c), 'w')
                                 in_other = True
-                                wm.write(">%smt_%s" % (args.c, line[1:]))
+                                wm.write(">%s_mt_%s" % (args.c, line[1:]))
 
                             elif args.ncbi and "(plasmid)" in line:
                                 if not wp:
@@ -104,7 +104,7 @@ def main():
                                     else:
                                         wp = open("%s/%spl.fa" % (args.o, args.c), 'w')
                                 in_plasmid = True
-                                wp.write(">%spl_%s" % (args.c, line[1:]))
+                                wp.write(">%s_pl_%s" % (args.c, line[1:]))
 
                             elif args.ncbi and ("(chloroplast)" in line or "(plastid)" in line):
                                 if not wc:
@@ -113,7 +113,7 @@ def main():
                                     else:
                                         wc = open("%s/%spt.fa" % (args.o, args.c), 'w')
                                 in_plastid = True
-                                wc.write(">%spl_%s" % (args.c, line[1:]))
+                                wc.write(">%s_pt_%s" % (args.c, line[1:]))
 
                             elif (args.ncbi or args.human) and 'isoform ' in line:
                                 if not args.human:
@@ -125,7 +125,7 @@ def main():
                                             else:
                                                 wi = open("%s/%siso.fa" % (args.o, args.c), 'w')
                                         in_iso = True
-                                        wi.write(">%siso_%s" % (args.c, line[1:]))
+                                        wi.write(">%s_iso_%s" % (args.c, line[1:]))
                                     else:
                                         w.write(">%s_%s" % (args.c, line[1:]))
                                 else:
