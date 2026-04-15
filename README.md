@@ -7,9 +7,9 @@
 
 Genome Zoo also known as MAdLandDB is a protein sequence Database for fully sequenced plant and algal genomes, with a particular emphasis on non-seed plants and streptophyte algae. This database contains over 21 million sequences, representing a diverse group of more than 600 species.
 
-## Download Species Data Information
+## Species Data Information
 
-To access the species data information, please visit the [downloads page](https://madland.science/madlandwiki/downloads). This link is currently accessible only to MAdLand members.
+Species metadata information is available in the `Genomezoo_Species_information_*.xlsx` spreadsheet in this repository.
 
 ## Adding New Data to Genome Zoo
 
